@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 assignment 1</title>
+</head>
+<body>
+
+    <h1>All this is about different Console types and methods</h1>
+    <button onclick="myFunction()">Clear Console</button>
+    <button onclick="myFunction1()">Start Trace</button>
+
+    <script>
+        console.log("I am learning JS.");
+
+        // error console
+        console.error("An Error occurred.");
+
+        // warning console
+        console.warn("Warning !!!");
+
+        // assert console
+        console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");
+
+        // clear console
+        function myFunction() {
+            console.clear();
+        }
+
+        // count console
+        for (i = 0; i < 5; i++) {
+            console.count();
+        }
+
+        // group start and end console
+        console.group();
+        console.log("Hello again, this time inside a group!");
+        console.log("Hello again, this time inside a group!");
+        console.groupEnd();
+        console.log("Hello again");
+
+        // group collapsed console
+        console.groupCollapsed();
+        console.log("Hello again, this time inside a collapsed group!");
+        console.log("Hello again, this time inside a collapsed group!");
+        console.groupEnd();
+
+        // info console
+        console.info("Hello world!");
+
+        // table console
+        console.table(["Audi", "Volvo", "Ford"]);
+
+        // time console
+        console.time();
+        for (i = 0; i < 100000; i++) {
+            // some code
+        }
+        console.timeEnd();
+
+        // trace console
+        function myFunction1() {
+            myFunction2();
+        }
+        function myFunction2() {
+            console.trace();
+        }
+
+    </script>
+</body>
+</html>

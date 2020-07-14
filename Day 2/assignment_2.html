@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 assignment 2</title>
+</head>
+<body>
+    
+    <h1>Difference between var, let and const.</h1>
+
+    <script>
+
+    // var - global scope 
+    // this variable can be changed, update through any time in the code anywhere
+    var name = "Coder";
+    console.log(name);
+    
+    // let - local scope 
+    // this variable can be changed only using let in a defined local scope i.e. brackets
+    {
+        let name = "Programmer";
+        console.log(name);
+    }
+    console.log(name);
+
+    // const - global but const scope
+    // this variable remains same throughout the code it cannot be changed or altered in any scope
+    const age = 20;
+    console.log(age);
+    // var age = 30;        // this gives an error coz age is a const variable and that cannot be changed.
+    // console.log(age);
+
+    </script>
+
+    
+
+    <!-- const -->
+
+</body>
+</html>
