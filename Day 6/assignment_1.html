@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 assignment 1</title>
+</head> 
+<body>
+    <script>
+        let colors = ["blue", "red", "green", "yellow", "purple"];
+
+        let i = 0;
+        function changeColor() {
+            document.getElementById("background").style.backgroundColor = colors[i];
+            i = (i+1)%colors.length;
+        }
+        setInterval(changeColor, 5000);
+    </script>
+</body>
+</html>
